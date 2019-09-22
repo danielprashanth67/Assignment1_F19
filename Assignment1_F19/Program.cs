@@ -82,6 +82,7 @@ namespace Assignment1_F19
 
                 }
                 // Printing the final result of all numbers which are self dividing
+                Console.WriteLine("Result for Self Dividing numbers");
                 Console.WriteLine(output.TrimStart(','));
 
             }
@@ -114,6 +115,7 @@ namespace Assignment1_F19
                 {
                     output = output + digits[k].ToString() + ',';
                 }
+                Console.WriteLine("Result for Series numbers");
                 Console.WriteLine(output.TrimEnd(','));
             }
             catch
@@ -127,6 +129,7 @@ namespace Assignment1_F19
             try
             {
                 // creating  the traingle using '*' and for loop
+                Console.WriteLine("Result for printing a Traingle");
                 for (int i = n * 2 - 1; i > 0; i = i - 2)
                 {
                     int j = i;
@@ -139,6 +142,7 @@ namespace Assignment1_F19
                     Console.WriteLine();
                     Console.Write(" ".PadLeft((n) - (i - 1) / 2));
                 }
+                Console.WriteLine();
             }
             catch
             {
@@ -169,6 +173,7 @@ namespace Assignment1_F19
                     // returning the count of  stones you have which are also jewels.
 
                 }
+                Console.WriteLine("Result for number of jewels in stones");
                 return count;
             }
             catch
@@ -241,6 +246,7 @@ namespace Assignment1_F19
                 /* getting the array list from 'map' where key is 'max_sum'  */
                 List<int> final_list = map[max_sum];
                 /* convert list to array */
+                Console.WriteLine("Result for Largest Contigous array");
                 return final_list.ToArray();
             }
             catch
@@ -261,6 +267,7 @@ namespace Assignment1_F19
         {
             try
             {
+                Console.WriteLine("Result for Puzzle");
                 // ASKING FOR INPUT STRINGS
                 Console.WriteLine("Enter the input strings");
                 string input1 = Console.ReadLine();
